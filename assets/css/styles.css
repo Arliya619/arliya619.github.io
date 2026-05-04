@@ -114,8 +114,13 @@ body.lang-la .work__content {
 
 body.lang-th .nav__link,
 body.lang-la .nav__link {
-  font-size: var(--normal-font-size);
+  font-size: var(--h2-font-size);
   font-weight: 500;
+}
+
+body.lang-th .lang-dropdown,
+body.lang-la .lang-dropdown {
+  font-size: var(--normal-font-size);
 }
 
 body.lang-th .work__description,
