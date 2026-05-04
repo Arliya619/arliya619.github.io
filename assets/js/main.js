@@ -1,3 +1,32 @@
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/* Menu show */
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
+}
+
+/* Menu hidden */
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+/*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () =>{
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
 /*=============== HOME SPLIT TEXT ===============*/
 const { animate, text, stagger } = anime
 
@@ -42,6 +71,26 @@ const swiperProjects = new Swiper('.projects__swiper', {
 
   autoplay: {
     delay: 3000,
+    disableOnInteraction: false,
+  }
+})
+
+/*=============== SWIPER REELS ===============*/
+const swiperReels = new Swiper('.reels__swiper', {
+  loop: true,
+  spaceBetween: 24,
+  slidesPerView: 'auto',
+  grabCursor: true,
+  speed: 600,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  autoplay: {
+    delay: 3500,
     disableOnInteraction: false,
   }
 })
@@ -192,7 +241,7 @@ const sr = ScrollReveal({
   // reset: true, // Animation repeat
 })
 
-sr.reveal(`.home__image, .projects__container, .work__container,
+sr.reveal(`.home__image, .reels__container, .projects__container, .work__container,
             .testimonials__container, .contact__container`)
 sr.reveal(`.home__data`, {delay: 900, origin: 'bottom'})
 sr.reveal(`.home__info`, {delay: 1200, origin: 'bottom'})
