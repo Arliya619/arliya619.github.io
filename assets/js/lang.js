@@ -202,13 +202,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (['about_desc', 'about_title', 'reels_title', 'projects_title', 'work_title', 'services_title', 'projects_1', 'projects_2', 'projects_3', 'projects_4', 'work_dev', 'work_des', 'work_seo', 'work_sys', 'work_prog', 'work_ui', 'testimonials_title'].includes(key)) {
         el.innerHTML = translations[lang][key];
       } else {
-        // If element has icon inside, preserve icon structure.
-        // Assuming the original text structure without icon child nodes.
-        if (el.childNodes.length > 1) {
-            // Usually text is the first node, but we'll safely just replace the inner text node or just innerHTML if we format it right.
-            // For simple text:
-        }
-        
         // Simple way: if node has children like <i>, replace the first text node.
         let textNode = Array.from(el.childNodes).find(n => n.nodeType === Node.TEXT_NODE && n.nodeValue.trim() !== "");
         if(textNode) {
@@ -218,5 +211,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
+
+    // Re-initialize animations for split text since the text content was replaced
+    if (typeof window.initHomeAnimation === 'function') {
+      // Small timeout ensures DOM has updated its text nodes before anime.js splits it
+      setTimeout(() => {
+        window.initHomeAnimation();
+      }, 50);
+    }
   }
 });

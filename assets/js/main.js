@@ -30,30 +30,44 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*=============== HOME SPLIT TEXT ===============*/
 const { animate, text, stagger } = anime
 
-const { chars: chars1 } = text.split('.home__profession-1', { chars: true })
-const { chars: chars2 } = text.split('.home__profession-2', { chars: true })
+let animeProfession1, animeProfession2;
 
-animate(chars1, {
-  y: [
-    { to: ['100%', '0%'] },
-    { to: '-100%', delay: 4000, ease: 'in(3)' }
-  ],
-  duration: 900,
-  ease: 'out(3)',
-  delay: stagger(80),
-  loop: true,
-})
+window.initHomeAnimation = () => {
+  // Pause existing animations if they exist to prevent memory leaks on detached elements
+  if (animeProfession1) animeProfession1.pause();
+  if (animeProfession2) animeProfession2.pause();
 
-animate(chars2, {
-  y: [
-    { to: ['100%', '0%'] },
-    { to: '-100%', delay: 4000, ease: 'in(3)' }
-  ],
-  duration: 900,
-  ease: 'out(3)',
-  delay: stagger(80),
-  loop: true,
-})
+  // Elements must be present and contain text
+  const prof1 = document.querySelector('.home__profession-1');
+  const prof2 = document.querySelector('.home__profession-2');
+  
+  if (!prof1 || !prof2) return;
+
+  const { chars: chars1 } = text.split('.home__profession-1', { chars: true })
+  const { chars: chars2 } = text.split('.home__profession-2', { chars: true })
+
+  animeProfession1 = animate(chars1, {
+    y: [
+      { to: ['100%', '0%'] },
+      { to: '-100%', delay: 4000, ease: 'in(3)' }
+    ],
+    duration: 900,
+    ease: 'out(3)',
+    delay: stagger(80),
+    loop: true,
+  })
+
+  animeProfession2 = animate(chars2, {
+    y: [
+      { to: ['100%', '0%'] },
+      { to: '-100%', delay: 4000, ease: 'in(3)' }
+    ],
+    duration: 900,
+    ease: 'out(3)',
+    delay: stagger(80),
+    loop: true,
+  })
+}
 
 /*=============== SWIPER PROJECTS ===============*/
 const swiperProjects = new Swiper('.projects__swiper', {
@@ -80,8 +94,14 @@ const swiperReels = new Swiper('.reels__swiper', {
   loop: true,
   spaceBetween: 24,
   slidesPerView: 'auto',
+  centeredSlides: true,
   grabCursor: true,
   speed: 600,
+  breakpoints: {
+    1150: {
+      slidesPerView: 3,
+    }
+  },
 
   // If we need pagination
   pagination: {
