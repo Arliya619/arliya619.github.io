@@ -575,7 +575,7 @@ img {
 .home__image .blob-animate {
   width: 250px;
   height: 250px;
-  bottom: 0;
+  bottom: 70px;
   justify-self: center;
 }
 
@@ -740,8 +740,8 @@ img {
 }
 
 .about__image .blob-animate:nth-child(1) {
-  top: 1.5rem;
-  left: 1rem;
+  top: 3.5rem;
+  left: 2rem;
 }
 
 .about__image .blob-animate:nth-child(2) {
@@ -750,7 +750,7 @@ img {
 }
 
 .about__perfil {
-  width: 220px;
+  width: 280px;
 }
 
 .about__shadow {
@@ -1564,7 +1564,7 @@ img {
 
   .home__container {
     width: initial;
-    padding-top: 3rem;
+    padding-top: 6rem;
   }
 
   .home__perfil {
