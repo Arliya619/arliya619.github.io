@@ -169,7 +169,7 @@ body.lang-la .lang-dropdown {
 body.lang-th .work__description,
 body.lang-la .work__description {
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 700;
   /* Slightly thinner for better contrast with titles */
 }
 

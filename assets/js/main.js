@@ -218,7 +218,7 @@ const scrollActive = () => {
     link.classList.toggle('active-link', scrollY > top && scrollY <= top + height)
   })
 }
-window.addEventListener('scrool', scrollActive)
+window.addEventListener('scroll', scrollActive)
 
 /*=============== CUSTOM CURSOR ===============*/
 const cursor = document.querySelector('.cursor')
