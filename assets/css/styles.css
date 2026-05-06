@@ -55,11 +55,15 @@ body.lang-la .home__name {
   margin-top: 0.5rem;
 }
 
+body.lang-la .home__name {
+  font-weight: 800;
+}
+
 @media screen and (min-width: 1150px) {
 
   body.lang-th .home__name,
   body.lang-la .home__name {
-    font-size: 3.25rem;
+    font-size: 3rem;
     line-height: 1;
     margin-top: 0rem;
   }
@@ -80,9 +84,15 @@ body.lang-la .home__profession-1 {
   font-size: var(--bigger-font-size);
 }
 
-body.lang-th .home__profession-2,
+body.lang-th .home__profession-2 {
+  font-weight: 600;
+  line-height: 1.15;
+  font-size: var(--biggest-font-size);
+  transform: translateY(-0.5rem);
+}
+
 body.lang-la .home__profession-2 {
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.15;
   font-size: var(--biggest-font-size);
   transform: translateY(-0.5rem);
@@ -90,8 +100,19 @@ body.lang-la .home__profession-2 {
 
 @media screen and (min-width: 1150px) {
 
+  body.lang-th .home__info {
+    transform: translateX(2.5rem);
+  }
+
+  body.lang-th .home__profession-1,
+
+  body.lang-la .home__profession-1 {
+    font-size: 2.25rem;
+  }
+
   body.lang-th .home__profession-2,
   body.lang-la .home__profession-2 {
+    font-size: 3.25rem;
     transform: translateY(-0.75rem);
   }
 }
@@ -1576,8 +1597,8 @@ img {
   }
 
   .home__info {
-    top: 12rem;
-    right: 1rem;
+    top: 13rem;
+    right: -3rem;
     bottom: initial;
   }
 
