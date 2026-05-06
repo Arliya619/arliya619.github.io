@@ -5,6 +5,7 @@ const translations = {
     "nav_reels": "Reels",
     "nav_contact": "Contact",
     "home_greeting": "Hello, I'm",
+    "home_name": "Arliya <br> Phounsavath",
     "home_split": "Creative",
     "home_prof1": "Developer",
     "home_prof2": "Video editor",
@@ -59,40 +60,41 @@ const translations = {
     "contact_write": "Write Me & We'll Talk"
   },
   th: {
-    "nav_about": "เกี่ยวกับเรา",
+    "nav_about": "เกี่ยวกับผม",
     "nav_projects": "ผลงาน",
     "nav_reels": "วิดีโอ Reels",
     "nav_contact": "ติดต่อ",
-    "home_greeting": "สวัสดี ฉันคือ",
-    "home_split": "นักสร้างสรรค์",
-    "home_prof1": "นักพัฒนา",
-    "home_prof2": "ตัดต่อวิดีโอ",
-    "about_title": "<span>ความคิดสร้างสรรค์</span><br> คือความหลงใหลของฉัน",
-    "about_desc": "ฉันเป็นนักตัดต่อวิดีโอ <b>ออกแบบกราฟิก และการตลาด SEO</b> ที่หลงใหลในการทดลอง<b>ทักษะใหม่ๆ และความคิดสร้างสรรค์</b> ด้วยแรงผลักดันจากการเรียนรู้ ฉันมักจะมองหาโอกาสในการสำรวจและเรียนรู้ทักษะใหม่ๆอยู่เสมอ",
+    "home_greeting": "สวัสดี ผมเป็น",
+    "home_name": "อะลิยะ <br> พูนสะหวัด",
+    "home_split": "นักออกแบบ",
+    "home_prof1": "นักพัฒนาเว็บ",
+    "home_prof2": "และนักตัดต่อวิดีโอ",
+    "about_title": "<span>ความคิดสร้างสรรค์</span><br> คือสิ่งที่ผมให้ความสำคัญ",
+    "about_desc": "ผมเป็นนักตัดต่อวิดีโอ <b>นักทำกราฟิก และการตลาดออนไลน์</b> ที่ชอบทดลองมองหา<b>ทักษะใหม่ๆ และความคิดสร้างสรรค์</b> ด้วยแรงผลักดันจากการเรียนรู้ ผมมักจะมองหาโอกาสในการสำรวจและเรียนรู้ทักษะใหม่ๆอยู่เสมอ",
     "about_resume": "เรซูเม่",
-    "reels_title": "วิดีโอ <br><span>Reels</span> ของฉัน",
+    "reels_title": "งานตัดต่อ <br><span>Reels</span> ของผม",
     "reels_card_view": "รับชมวิดีโอ",
     "projects_title": "ผลงานเว็บไซต์ <br><span>บางส่วน</span>",
     "projects_tech": "เทคโนโลยีที่ใช้",
-    "projects_title_1": "เว็บไซต์<br> สตรีมอนิเมะ",
+    "projects_title_1": "เว็บไซต์<br> ดูอนิเมะออนไลน์",
     "projects_desc_1": "HTML, CSS, Javascript.",
     "projects_title_2": "ร้านกาแฟ <br> เรียบง่ายแต่น่าดึงดูด",
     "projects_desc_2": "HTML, CSS, Javascript.",
     "projects_title_3": "เว็บไซต์ <br> ร้านกาแฟ",
     "projects_desc_3": "HTML, CSS, Javascript.",
-    "projects_title_4": "เว็บไซต์ <br> สุขภาพ Terapia",
+    "projects_title_4": "เว็บไซต์ <br> สุขภาพ การนวดและอื่นๆ",
     "projects_desc_4": "HTML, CSS, Javascript.",
-    "projects_title_5": "เว็บไซต์ <br> เกมเมอร์",
+    "projects_title_5": "เว็บไซต์ <br> สำหรับข่าวสารเกม",
     "projects_desc_5": "HTML, CSS, Javascript.",
     "work_title": "<span>ประสบการณ์</span><br>การทำงาน",
     "work_btn_exp": "ประสบการณ์",
     "work_btn_edu": "การศึกษา",
     "work_dev": "ออกแบบ <br> กราฟิก",
-    "work_desc_exp_1": "ออกแบบแบนเนอร์โปรโมทและธีมสำหรับเว็บไซต์ IGaming, สร้างโลโก้, gif และออกแบบเว็บไซต์",
-    "work_des": "SEO & ปรับแต่ง <br> เว็บไซต์",
-    "work_desc_exp_2": "นักพัฒนาเว็บที่จัดการเทคโนโลยีต่างๆ เช่น angular, database, CMS และช่วยในการปรับแต่งเว็บไซต์",
+    "work_desc_exp_1": "ออกแบบแบนเนอร์โปรโมทและธีมสำหรับเว็บไซต์, สร้างโลโก้, gif และออกแบบเว็บไซต์ขึ้นมาเอง",
+    "work_des": "SEO Marketing <br> สร้างเว็บไซต์",
+    "work_desc_exp_2": "นักพัฒนาเว็บที่จัดการเทคโนโลยีต่างๆ เช่น ต่อโดเมนและโฮสติ้ง, database, CMS และช่วยในการปรับแต่งเว็บไซต์",
     "work_seo": "ตัดต่อ <br> วิดีโอ",
-    "work_desc_exp_3": "ตัดต่อวิดีโอไม่ให้ดูน่าเบื่อและใส่เอฟเฟกต์ต่างๆ เช่น ทรานซิชัน, เอฟเฟกต์เสียง, ซับไตเติ้ล, การเกรดสี และอื่นๆ อีกมากมาย",
+    "work_desc_exp_3": "ตัดต่อวิดีโอของคุณไม่ให้ดูน่าเบื่อจนเกีนไปและใส่เอฟเฟกต์ต่างๆ เช่น ทรานซิชัน, เอฟเฟกต์เสียง, ซับไตเติ้ล, การเกรดสี และอื่นๆ อีกมากมาย",
     "work_sys": "มัธยมศึกษา <br> ตอนปลาย",
     "work_desc_edu_1": "เริ่มเรียนรู้พื้นฐานการพัฒนาเว็บและหลักการ SEO ด้วยตัวเอง มีความสนใจอย่างมากในวิทยาการคอมพิวเตอร์และการตลาดดิจิทัลในช่วงมัธยม",
     "work_prog": "วิทยาการ <br> คอมพิวเตอร์",
@@ -122,11 +124,12 @@ const translations = {
     "nav_projects": "ຜົນງານ",
     "nav_reels": "ວິດີໂອ Reels",
     "nav_contact": "ຕິດຕໍ່",
-    "home_greeting": "ສະບາຍດີ ຂ້ອຍແມ່ນ",
-    "home_split": "ນັກສ້າງສັນ",
-    "home_prof1": "ນັກພັດທະນາ",
-    "home_prof2": "ຕັດຕໍ່ວິດີໂອ",
-    "about_title": "<span>ຄວາມຄິດສ້າງສັນ</span><br> ແມ່ນຄວາມມັກຂອງຂ້ອຍ",
+    "home_greeting": "ສະບາຍດີ ຂ້ອຍຊື່",
+    "home_name": "ອະລິຍະ <br> ພູນສະຫວັດ",
+    "home_split": "ນັກອອກແບບ",
+    "home_prof1": "ນັກພັດທະນາເວັບ",
+    "home_prof2": "ແລະນັກຕັດຕໍ່ວິດີໂອ",
+    "about_title": "<span>ຄວາມຄິດສ້າງສັນ</span><br>ແມ່ນຄວາມມັກຂອງຂ້ອຍ",
     "about_desc": "ຂ້ອຍເປັນນັກຕັດຕໍ່ວິດີໂອ <b>ອອກແບບກຣາບຟິກ ແລະການຕະຫຼາດ SEO</b> ທີ່ມັກການທົດລອງ<b>ທັກສະໃໝ່ໆ ແລະຄວາມຄິດສ້າງສັນ.</b> ຂັບເຄື່ອນດ້ວຍການຮຽນຮູ້ ຂ້ອຍມັກຈະຊອກຫາໂອກາດໃນການສຳຫຼວດ ແລະຮຽນຮູ້ທັກສະໃໝ່ໆສະເໝີ.",
     "about_resume": "ຊີວະປະຫວັດ",
     "reels_title": "ວິດີໂອ <br><span>Reels</span> ຂອງຂ້ອຍ",
@@ -200,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
   langItems.forEach(item => {
     item.addEventListener('click', () => {
       const selectedLang = item.getAttribute('data-value');
-      
+
       // Update UI
       langItems.forEach(li => li.classList.remove('active'));
       item.classList.add('active');
@@ -215,17 +218,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Load saved language from localStorage or default to 'en'
   const savedLang = localStorage.getItem("selectedLanguage") || "en";
-  
+
   // Set initial active state in dropdown
   langItems.forEach(li => {
-    if(li.getAttribute('data-value') === savedLang) {
+    if (li.getAttribute('data-value') === savedLang) {
       li.classList.add('active');
     } else {
       li.classList.remove('active');
     }
   });
   currentLangText.textContent = savedLang.toUpperCase();
-  
+
   updateLanguage(savedLang);
 
   function updateLanguage(lang) {
@@ -235,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.forEach(el => {
       const key = el.getAttribute("data-i18n");
       // Check if it's an element that contains HTML like the titles or description
-      if (['about_desc', 'about_title', 'reels_title', 'projects_title', 'work_title', 'services_title', 'projects_title_1', 'projects_title_2', 'projects_title_3', 'projects_title_4', 'projects_title_5', 'work_dev', 'work_des', 'work_seo', 'work_sys', 'work_prog', 'work_ui', 'testimonials_title'].includes(key)) {
+      if (['about_desc', 'about_title', 'reels_title', 'projects_title', 'work_title', 'services_title', 'projects_title_1', 'projects_title_2', 'projects_title_3', 'projects_title_4', 'projects_title_5', 'work_dev', 'work_des', 'work_seo', 'work_sys', 'work_prog', 'work_ui', 'testimonials_title', 'home_name'].includes(key)) {
         if (translations[lang] && translations[lang][key]) {
           el.innerHTML = translations[lang][key];
         }
@@ -243,10 +246,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // Simple way: if node has children like <i>, replace the first text node.
         if (translations[lang] && translations[lang][key]) {
           let textNode = Array.from(el.childNodes).find(n => n.nodeType === Node.TEXT_NODE && n.nodeValue.trim() !== "");
-          if(textNode) {
-              textNode.nodeValue = translations[lang][key] + " ";
+          if (textNode) {
+            textNode.nodeValue = translations[lang][key] + " ";
           } else {
-              el.textContent = translations[lang][key];
+            el.textContent = translations[lang][key];
           }
         }
       }
