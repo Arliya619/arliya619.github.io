@@ -64,17 +64,17 @@ const translations = {
     "nav_projects": "ผลงาน",
     "nav_reels": "วิดีโอ Reels",
     "nav_contact": "ติดต่อ",
-    "home_greeting": "สวัสดี ผมเป็น",
+    "home_greeting": "สวัสดี ผมชื่อ",
     "home_name": "อะลิยะ <br> พูนสะหวัด",
     "home_split": "นักออกแบบ",
     "home_prof1": "นักพัฒนาเว็บ",
     "home_prof2": "และนักตัดต่อวิดีโอ",
     "about_title": "<span>ความคิดสร้างสรรค์</span><br> คือสิ่งที่ผมให้ความสำคัญ",
-    "about_desc": "ผมเป็นนักตัดต่อวิดีโอ <b>นักทำกราฟิก และการตลาดออนไลน์</b> ที่ชอบทดลองมองหา<b>ทักษะใหม่ๆ และความคิดสร้างสรรค์</b> ด้วยแรงผลักดันจากการเรียนรู้ ผมมักจะมองหาโอกาสในการสำรวจและเรียนรู้ทักษะใหม่ๆอยู่เสมอ",
+    "about_desc": "ผมเป็นนักตัดต่อวิดีโอ <b>ทำกราฟิก และการตลาดออนไลน์</b> ที่ชอบทดลองมองหา<b>ทักษะใหม่ๆ และความคิดสร้างสรรค์</b> ด้วยความที่จะอยากเรียนรู้ ผมมักจะมองหาโอกาสในการสำรวจและเรียนรู้ทักษะใหม่ๆอยู่เสมอ",
     "about_resume": "เรซูเม่",
-    "reels_title": "งานตัดต่อ <br><span>Reels</span> ของผม",
+    "reels_title": "งานตัดต่อ <br><span>Reels</span> วิดิโอ",
     "reels_card_view": "รับชมวิดีโอ",
-    "projects_title": "ผลงานเว็บไซต์ <br><span>บางส่วน</span>",
+    "projects_title": "ผลงานทำเว็บ <br><span>บางส่วน</span>",
     "projects_tech": "เทคโนโลยีที่ใช้",
     "projects_title_1": "เว็บไซต์<br> ดูอนิเมะออนไลน์",
     "projects_desc_1": "HTML, CSS, Javascript.",
@@ -216,8 +216,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Load saved language from localStorage or default to 'en'
-  const savedLang = localStorage.getItem("selectedLanguage") || "en";
+  // Load saved language from localStorage, or detect browser language, or default to 'en'
+  let savedLang = localStorage.getItem("selectedLanguage");
+  if (!savedLang) {
+    const browserLang = navigator.language.slice(0, 2).toLowerCase();
+    if (browserLang === 'th') {
+      savedLang = 'th';
+    } else if (browserLang === 'lo' || browserLang === 'la') {
+      savedLang = 'la';
+    } else {
+      savedLang = 'en';
+    }
+  }
 
   // Set initial active state in dropdown
   langItems.forEach(li => {
