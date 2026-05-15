@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== SECURITY META TAGS ===============-->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="referrer" content="strict-origin-when-cross-origin">
+   <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <!--=============== SEO META TAGS ===============-->
+   <meta name="description"
+      content="Arliya - Video Editor, Graphic Designer & SEO Marketer. บริการรับตัดต่อวิดีโอคุณภาพสูง ຮັບຕັດຕໍ່ວິດີໂອແບບມືອາຊີບ ແລະ ການຕະຫຼາດ SEO.">
+   <meta name="keywords"
+      content="Video Editor, Video Editing, SEO Marketing, Graphic Design, Arliya, ตัดต่อวิดีโอ, รับตัดต่อวิดีโอ, ตัดต่อคลิป, รับทำ SEO, กราฟิกดีไซน์, ຕັດຕໍ່ວິດີໂອ, ຮັບຕັດຕໍ່ວິດີໂອ, ຕັດຕໍ່ຄລິບ, ຮັບເຮັດ SEO, ອອກແບບກຣາຟິກ">
+   <meta name="author" content="Arliya Phounsavath">
+   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://arliya619.github.io/">
+   <meta property="og:title" content="Arliya |  Video Editor & SEO Marketing">
+   <meta property="og:description"
+      content="Arliya - Video Editor, Graphic Designer & SEO Marketer. บริการรับตัดต่อวิดีโอคุณภาพสูง ຮັບຕັດຕໍ່ວິດີໂອແບບມືອາຊີບ ແລະ ການຕະຫຼາດ SEO.">
+   <meta property="og:image" content="https://arliya619.github.io/assets/img/home-perfil.png">
+
+   <!-- Twitter -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:url" content="https://arliya619.github.io/">
+   <meta name="twitter:title" content="Arliya |  Video Editor & SEO Marketing">
+   <meta name="twitter:description"
+      content="Arliya - Video Editor, Graphic Designer & SEO Marketer. บริการรับตัดต่อวิดีโอคุณภาพสูง ຮັບຕັດຕໍ່ວິດີໂອແບບມືອາຊີບ ແລະ ການຕະຫຼາດ SEO.">
+   <meta name="twitter:image" content="https://arliya619.github.io/assets/img/home-perfil.png">
+
+   <!-- Alternate Languages for SEO -->
+   <link rel="alternate" hreflang="en" href="https://arliya619.github.io/" />
+   <link rel="alternate" hreflang="th" href="https://arliya619.github.io/?lang=th" />
+   <link rel="alternate" hreflang="lo" href="https://arliya619.github.io/?lang=la" />
+   <link rel="alternate" hreflang="x-default" href="https://arliya619.github.io/" />
+
+   <title>Arliya | Video Editor & SEO Marketing</title>
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <div class="blob-animate"></div>
+
+      <nav class="nav container">
+         <a href="https://arliya619.github.io/" class="nav__logo">Arliya</a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li>
+                  <a href="#about" class="nav__link" data-i18n="nav_about">About Me</a>
+               </li>
+
+               <li>
+                  <a href="#projects" class="nav__link" data-i18n="nav_projects">Projects</a>
+               </li>
+
+               <li>
+                  <a href="#reels" class="nav__link" data-i18n="nav_reels">Reels</a>
+               </li>
+
+               <li>
+                  <a href="#contact" class="nav__link" data-i18n="nav_contact">Contact</a>
+               </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__actions">
+            <!-- Custom Language Dropdown -->
+            <div class="lang-dropdown" id="lang-dropdown">
+               <div class="lang-dropdown__toggle" id="lang-toggle">
+                  <span id="current-lang">EN</span>
+                  <i class="ri-arrow-down-s-line"></i>
+               </div>
+               <ul class="lang-dropdown__menu" id="lang-menu">
+                  <li class="lang-dropdown__item active" data-value="en">EN</li>
+                  <li class="lang-dropdown__item" data-value="th">TH</li>
+                  <li class="lang-dropdown__item" data-value="la">LA</li>
+               </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!-- CUSTOM CURSOR -->
+      <div class="cursor"></div>
+
+      <!--==================== HOME ====================-->
+      <section class="home section">
+         <div class="home__shadow"></div>
+
+         <div class="home__container container grid">
+            <div class="home__data">
+               <h3 class="home__greeting" data-i18n="home_greeting">Hello, I'm</h3>
+               <h1 class="home__name" data-i18n="home_name">Arliya <br> Phounsavath</h1>
+            </div>
+
+            <div class="home__image">
+               <div class="blob-animate"></div>
+               <img src="assets/img/Arliya 01.webp" alt="image" class="home__perfil">
+            </div>
+
+            <div class="home__info">
+               <h3 class="home__split" data-i18n="home_split">Creative</h3>
+
+               <h2 class="home__profession-1" data-i18n="home_prof1">Developer</h2>
+               <h2 class="home__profession-2" data-i18n="home_prof2">Video editor</h2>
+            </div>
+
+            <div class="home__social">
+               <a href="https://line.me/ti/p/Q9EBGY7TNe" target="_blank" class="home__social-link">
+                  <i class="ri-line-fill"></i>
+               </a>
+
+               <a href="https://www.facebook.com/Arliya.io" target="_blank" class="home__social-link">
+                  <i class="ri-facebook-circle-fill"></i>
+               </a>
+
+               <a href="http://t.me/Ayaya390" target="_blank" class="home__social-link">
+                  <i class="ri-telegram-line"></i>
+               </a>
+
+               <a href="https://wa.me/+8562051978790" target="_blank" class="home__social-link">
+                  <i class="ri-whatsapp-line"></i>
+               </a>
+            </div>
+
+            <a href="assets/pdf/My Cv.pdf" download target="_blank" class="home__cv">
+               RESUME <i class="ri-file-list-2-line"></i>
+            </a>
+         </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__shadow"></div>
+
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h2 class="section__title" data-i18n="about_title">
+                  <span>Creativity</span>
+                  <br> Is My Passion
+               </h2>
+
+               <p class="about__description" data-i18n="about_desc">
+                  I'm a video editor <b>graphig design and seo marketing</b> passionate
+                  about experimenting with new <b>skills and creativity.</b>
+                  Driving by learning and curiosity, I'm always looking to
+                  explore and learn more development and design skills.
+               </p>
+
+               <a href="assets/pdf/Arliya-Cv.pdf" download target="_blank" class="button">
+                  <span data-i18n="about_resume">Resume</span> <i class="ri-file-list-2-line"></i>
+               </a>
+            </div>
+
+            <div class="about__image">
+               <div class="blob-animate"></div>
+               <div class="blob-animate"></div>
+               <img src="assets/img/Arliya 02.webp" alt="image" class="about__perfil">
+            </div>
+         </div>
+      </section>
+
+      <!--==================== REELS ====================-->
+      <section class="reels section" id="reels">
+         <h2 class="section__title" data-i18n="reels_title">
+            My Video <br>
+            <span>Reels</span>
+         </h2>
+
+         <div class="reels__container container">
+            <div class="reels__swiper swiper">
+               <div class="swiper-wrapper">
+                  <!-- Reel 1 -->
+                  <article class="reels__card swiper-slide">
+                     <div class="blob"></div>
+                     <div class="reels__image">
+                        <img src="assets/img/YT-01.webp" alt="image" class="reels__img">
+                        <a href="https://youtube.com/shorts/AuMgPDABASA" target="_blank" class="reels__button"
+                           data-i18n="reels_card_view">
+                           View Reel
+                        </a>
+                     </div>
+                  </article>
+                  <!-- Reel 2 -->
+                  <article class="reels__card swiper-slide">
+                     <div class="blob"></div>
+                     <div class="reels__image">
+                        <img src="assets/img/YT-02.webp" alt="image" class="reels__img">
+                        <a href="https://youtube.com/shorts/rDFZT2kHBDI" target="_blank" class="reels__button"
+                           data-i18n="reels_card_view">
+                           View Reel
+                        </a>
+                     </div>
+                  </article>
+                  <!-- Reel 3 -->
+                  <article class="reels__card swiper-slide">
+                     <div class="blob"></div>
+                     <div class="reels__image">
+                        <img src="assets/img/VE-01.webp" alt="image" class="reels__img">
+                        <a href="https://vimeo.com/1183641469?fl=ip&fe=ec" target="_blank" class="reels__button"
+                           data-i18n="reels_card_view">
+                           View Reel
+                        </a>
+                     </div>
+                  </article>
+                  <!-- Reel 4 -->
+                  <article class="reels__card swiper-slide">
+                     <div class="blob"></div>
+                     <div class="reels__image">
+                        <img src="assets/img/YT-04.webp" alt="image" class="reels__img">
+                        <a href="https://youtube.com/shorts/l-6XuGkgw8g" target="_blank" class="reels__button"
+                           data-i18n="reels_card_view">
+                           View Reel
+                        </a>
+                     </div>
+                  </article>
+                  <!-- Reel 5 -->
+                  <article class="reels__card swiper-slide">
+                     <div class="blob"></div>
+                     <div class="reels__image">
+                        <img src="assets/img/YT-05.webp" alt="image" class="reels__img">
+                        <a href="https://youtube.com/shorts/8EIRf2hM48k" target="_blank" class="reels__button"
+                           data-i18n="reels_card_view">
+                           View Reel
+                        </a>
+                     </div>
+                  </article>
+                  <!-- Reel 6 -->
+                  <article class="reels__card swiper-slide">
+                     <div class="blob"></div>
+                     <div class="reels__image">
+                        <img src="assets/img/VE-01.webp" alt="image" class="reels__img">
+                        <a href="https://vimeo.com/1183641469?fl=ip&fe=ec" target="_blank" class="reels__button"
+                           data-i18n="reels_card_view">
+                           View Reel
+                        </a>
+                     </div>
+                  </article>
+               </div>
+               <!-- Swiper pagination -->
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+         <h2 class="section__title" data-i18n="projects_title">
+            Some of website<br>
+            <span>Projects</span>
+         </h2>
+
+         <div class="projects__container container grid">
+            <div class="projects__swiper swiper">
+               <div class="swiper-wrapper">
+                  <article class="projects__card swiper-slide">
+                     <div class="blob"></div>
+
+                     <div class="projects__number">
+                        <h1>01</h1>
+                        <h3>Web</h3>
+                     </div>
+
+                     <div class="projects__data">
+                        <h1 class="projects__title" data-i18n="projects_title_1">Anime streaming<br> website</h1>
+                        <p class="projects__subtitle" data-i18n="projects_tech">Technologies used</p>
+                        <p class="projects__description" data-i18n="projects_desc_1">HTML, CSS, Javascript.</p>
+                     </div>
+
+                     <div class="projects__image">
+                        <img src="assets/img/Project-001.webp" alt="image" class="projects__img">
+                        <a href="https://themewagon.github.io/anime/" target="_blank" class="projects__button">
+                           <i class="ri-arrow-right-up-long-line"></i>
+                        </a>
+                     </div>
+                  </article>
+
+                  <article class="projects__card swiper-slide">
+                     <div class="blob"></div>
+
+                     <div class="projects__number">
+                        <h1>02</h1>
+                        <h3>Web</h3>
+                     </div>
+
+                     <div class="projects__data">
+                        <h1 class="projects__title" data-i18n="projects_title_2">Coffee Shop <br> Simple Yet Compelling
+                        </h1>
+                        <p class="projects__subtitle" data-i18n="projects_tech">Technologies used</p>
+                        <p class="projects__description" data-i18n="projects_desc_2">HTML, CSS, Javascript.</p>
+                     </div>
+
+                     <div class="projects__image">
+                        <img src="assets/img/Project-002.webp" alt="image" class="projects__img">
+                        <a href="https://themewagon.github.io/coffee/" target="_blank" class="projects__button">
+                           <i class="ri-arrow-right-up-long-line"></i>
+                        </a>
+                     </div>
+                  </article>
+
+                  <article class="projects__card swiper-slide">
+                     <div class="blob"></div>
+
+                     <div class="projects__number">
+                        <h1>03</h1>
+                        <h3>Web</h3>
+                     </div>
+
+                     <div class="projects__data">
+                        <h1 class="projects__title" data-i18n="projects_title_3">Coffee Blend <br> Websites</h1>
+                        <p class="projects__subtitle" data-i18n="projects_tech">Technologies used</p>
+                        <p class="projects__description" data-i18n="projects_desc_3">HTML, CSS, Javascript.</p>
+                     </div>
+
+                     <div class="projects__image">
+                        <img src="assets/img/Project-003.webp" alt="image" class="projects__img">
+                        <a href="https://themewagon.github.io/coffee1/" target="_blank" class="projects__button">
+                           <i class="ri-arrow-right-up-long-line"></i>
+                        </a>
+                     </div>
+                  </article>
+
+                  <article class="projects__card swiper-slide">
+                     <div class="blob"></div>
+
+                     <div class="projects__number">
+                        <h1>04</h1>
+                        <h3>Design</h3>
+                     </div>
+
+                     <div class="projects__data">
+                        <h1 class="projects__title" data-i18n="projects_title_4">Terapia <br> health website</h1>
+                        <p class="projects__subtitle" data-i18n="projects_tech">Technologies used</p>
+                        <p class="projects__description" data-i18n="projects_desc_4">HTML, CSS, Javascript.</p>
+                     </div>
+
+                     <div class="projects__image">
+                        <img src="assets/img/Project-004.webp" alt="image" class="projects__img">
+                        <a href="https://themewagon.github.io/terapia/index.html" target="_blank"
+                           class="projects__button">
+                           <i class="ri-arrow-right-up-long-line"></i>
+                        </a>
+                     </div>
+                  </article>
+
+                  <article class="projects__card swiper-slide">
+                     <div class="blob"></div>
+
+                     <div class="projects__number">
+                        <h1>05</h1>
+                        <h3>Design</h3>
+                     </div>
+
+                     <div class="projects__data">
+                        <h1 class="projects__title" data-i18n="projects_title_5">Game Warrior <br> Website</h1>
+                        <p class="projects__subtitle" data-i18n="projects_tech">Technologies used</p>
+                        <p class="projects__description" data-i18n="projects_desc_5">HTML, CSS, Javascript.</p>
+                     </div>
+
+                     <div class="projects__image">
+                        <img src="assets/img/Project-005.webp" alt="image" class="projects__img">
+                        <a href="https://themewagon.github.io/game-warrior" target="_blank" class="projects__button">
+                           <i class="ri-arrow-right-up-long-line"></i>
+                        </a>
+                     </div>
+                  </article>
+               </div>
+
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== WORK ====================-->
+      <section class="work section">
+         <h2 class="section__title" data-i18n="work_title">
+            <span>My Work</span>
+            <br>Experience
+         </h2>
+
+         <div class="work__container container grid">
+            <div class="work__tabs">
+               <!-- Button Experience -->
+               <button class="work__button work-active" data-target="#experience" data-i18n="work_btn_exp">
+                  Experience <i class="ri-briefcase-3-line"></i>
+               </button>
+
+               <!-- Button Education -->
+               <button class="work__button" data-target="#education" data-i18n="work_btn_edu">
+                  Education <i class="ri-graduation-cap-line"></i>
+               </button>
+            </div>
+
+            <div class="work__area">
+               <div class="work__line"></div>
+
+               <!-- Content Experience -->
+               <div class="work__content work-active" data-content id="experience">
+                  <div class="work__card">
+                     <div class="work__data">
+                        <div>
+                           <h1 class="work__title" data-i18n="work_dev">Graphic <br> Design</h1>
+                           <h3 class="work__subtitle">PangkalanToTo</h3>
+                        </div>
+
+                        <h2 class="work__year">2024</h2>
+                     </div>
+
+                     <p class="work__description" data-i18n="work_desc_exp_1">
+                        Design promotion banner and theme for IGaming website,
+                        make a logo, gif and design a website.
+                     </p>
+                  </div>
+
+                  <div class="work__card">
+                     <div class="work__data">
+                        <div>
+                           <h1 class="work__title" data-i18n="work_des">SEO & Web <br> Optimization</h1>
+                           <h3 class="work__subtitle">PangkalanToTo</h3>
+                        </div>
+
+                        <h2 class="work__year">2025</h2>
+                     </div>
+
+                     <p class="work__description" data-i18n="work_desc_exp_2">
+                        Web developer handling technologies such as angular,
+                        database, CMS, assisting with web optimization.
+                     </p>
+                  </div>
+
+                  <div class="work__card">
+                     <div class="work__data">
+                        <div>
+                           <h1 class="work__title" data-i18n="work_seo">Video <br> Editor</h1>
+                           <h3 class="work__subtitle">Freelance</h3>
+                        </div>
+
+                        <h2 class="work__year">Now</h2>
+                     </div>
+
+                     <p class="work__description" data-i18n="work_desc_exp_3">
+                        Edit video make it not look boring and put some effect like,
+                        transition, sound effects, subtitle, color grading and alot of thing.
+                     </p>
+                  </div>
+               </div>
+
+               <!-- Content Education -->
+               <div class="work__content" data-content id="education">
+                  <div class="work__card">
+                     <div class="work__data">
+                        <div>
+                           <h1 class="work__title" data-i18n="work_sys">Upper Secondary <br> Education</h1>
+                           <h3 class="work__subtitle">Vientiane High School</h3>
+                        </div>
+
+                        <h2 class="work__year">2016</h2>
+                     </div>
+
+                     <p class="work__description" data-i18n="work_desc_edu_1">
+                        Started self-learning web development basics and SEO principles.
+                        Developed a strong interest in computer science and digital marketing during high school.
+                     </p>
+                  </div>
+
+                  <div class="work__card">
+                     <div class="work__data">
+                        <div>
+                           <h1 class="work__title" data-i18n="work_prog">Graphic <br> Design</h1>
+                           <h3 class="work__subtitle">Learn by myself</h3>
+                        </div>
+
+                        <h2 class="work__year">2019</h2>
+                     </div>
+
+                     <p class="work__description" data-i18n="work_desc_edu_2">
+                        Began self-learning Graphic Design through various online platforms,
+                        Developed expertise in Photoshop workflows for digital advertising.
+                     </p>
+                  </div>
+
+                  <div class="work__card">
+                     <div class="work__data">
+                        <div>
+                           <h1 class="work__title" data-i18n="work_ui">Video <br> editing</h1>
+                           <h3 class="work__subtitle">Learn by myself</h3>
+                        </div>
+
+                        <h2 class="work__year">2022</h2>
+                     </div>
+
+                     <p class="work__description" data-i18n="work_desc_edu_3">
+                        Transitioned into professional video editing using Premiere Pro and After Effects,
+                        Launched a personal content channel to refine storytelling and visual editing techniques,
+                        Specialized in creating high-impact video advertisements for the Youtubers.
+                     </p>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section">
+         <h2 class="section__title" data-i18n="services_title">What I <span>Offer</span></h2>
+         <div class="services__container container grid">
+            <!-- Service Video Editing -->
+            <div class="services__card services-open">
+               <div class="blob"></div>
+
+               <div class="services__data">
+                  <h2 class="services__title" data-i18n="services_dev">Video Editing</h2>
+                  <p class="services__description" data-i18n="services_dev_desc">
+                     High-quality video editing specialized in entertaining youtuber and commercial ads.
+                     From raw footage to high-impact visual storytelling.
+                  </p>
+               </div>
+
+               <div class="services__info">
+                  <h3 class="services__subtitle" data-i18n="services_skills">Skills & Tools</h3>
+
+                  <ul class="services__skills">
+                     <li class="services__skill">Adobe Premiere Pro</li>
+                     <li class="services__skill">Adobe After Effects</li>
+                     <li class="services__skill">Filmora Wondershare</li>
+                     <li class="services__skill">Capcut</li>
+                  </ul>
+               </div>
+
+               <button class="services__button">
+                  <i class="ri-arrow-down-s-line"></i>
+               </button>
+            </div>
+
+            <!-- Service Design -->
+            <div class="services__card services-close">
+               <div class="blob blob-2"></div>
+
+               <div class="services__data">
+                  <h2 class="services__title" data-i18n="services_des">Web Developer & Graphic</h2>
+                  <p class="services__description" data-i18n="services_des_desc">
+                     Building responsive websites with HTML, CSS, and JavaScript.
+                     Designing creative visuals and images using Photoshop and Canva.
+                  </p>
+               </div>
+
+               <div class="services__info">
+                  <h3 class="services__subtitle" data-i18n="services_skills">Skills & Tools</h3>
+
+                  <ul class="services__skills">
+                     <li class="services__skill">Photoshop</li>
+                     <li class="services__skill">Canva</li>
+                     <li class="services__skill">Vscode</li>
+                     <li class="services__skill">Antigravity</li>
+                     <li class="services__skill">Elementor</li>
+                  </ul>
+               </div>
+
+               <button class="services__button">
+                  <i class="ri-arrow-down-s-line"></i>
+               </button>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== TESTIMONIALS ====================-->
+      <section class="testimonials section">
+         <h2 class="section__title" data-i18n="testimonials_title">
+            <span>What They Say</span>
+            <br>About Me
+         </h2>
+
+         <div class="testimonials__container container grid">
+            <!-- Testimonials card 1 -->
+            <div class="testimonials__content">
+               <article class="testimonials__card">
+                  <div class="blob"></div>
+
+                  <div class="testimonials__data">
+                     <img src="assets/img/testimonial-01.jpg" alt="image" class="testimonials__img">
+
+                     <h2 class="testimonials__name">PhouXai</h2>
+
+                     <div class="testimonials__rating">
+                        <div class="testimonials__stars">
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                        </div>
+
+                        <h3 class="testimonials__number">5.0</h3>
+                     </div>
+
+                     <p data-i18n="test_desc_1">
+                        Yeah this nigga is my friend I know his work will come out good like what I thought.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="testimonials__card">
+                  <div class="blob"></div>
+
+                  <div class="testimonials__data">
+                     <img src="assets/img/testimonial-02.jpg" alt="image" class="testimonials__img">
+
+                     <h2 class="testimonials__name">SangePhet</h2>
+
+                     <div class="testimonials__rating">
+                        <div class="testimonials__stars">
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                        </div>
+
+                        <h3 class="testimonials__number">5.0</h3>
+                     </div>
+
+                     <p data-i18n="test_desc_2">
+                        Fast turnaround. Really helped me out with a urgent request. Thanks!
+                     </p>
+                  </div>
+               </article>
+
+               <article class="testimonials__card">
+                  <div class="blob"></div>
+
+                  <div class="testimonials__data">
+                     <img src="assets/img/testimonial-03.jpg" alt="image" class="testimonials__img">
+
+                     <h2 class="testimonials__name">Kitar</h2>
+
+                     <div class="testimonials__rating">
+                        <div class="testimonials__starss">
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                        </div>
+
+                        <h3 class="testimonials__number">5.0</h3>
+                     </div>
+
+                     <p data-i18n="test_desc_3">
+                        Good work and delivered right on time. Very easy to communicate with.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="testimonials__card">
+                  <div class="blob"></div>
+
+                  <div class="testimonials__data">
+                     <img src="assets/img/testimonial-04.jpg" alt="image" class="testimonials__img">
+
+                     <h2 class="testimonials__name">PouNa</h2>
+
+                     <div class="testimonials__rating">
+                        <div class="testimonials__stars">
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                        </div>
+
+                        <h3 class="testimonials__number">5.0</h3>
+                     </div>
+
+                     <p data-i18n="test_desc_4">
+                        Understood the brief perfectly. Hardly needed any revisions. Great result.
+                     </p>
+                  </div>
+               </article>
+            </div>
+
+            <!-- Testimonials card 2 -->
+            <div class="testimonials__content testimonials__reverse">
+               <article class="testimonials__card">
+                  <div class="blob"></div>
+
+                  <div class="testimonials__data">
+                     <img src="assets/img/testimonial-01.jpg" alt="image" class="testimonials__img">
+
+                     <h2 class="testimonials__name">PhouXai</h2>
+
+                     <div class="testimonials__rating">
+                        <div class="testimonials__stars">
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                        </div>
+
+                        <h3 class="testimonials__number">5.0</h3>
+                     </div>
+
+                     <p data-i18n="test_desc_1">
+                        Yeah this nigga is my friend I know his work will come out good like what I thought.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="testimonials__card">
+                  <div class="blob"></div>
+
+                  <div class="testimonials__data">
+                     <img src="assets/img/testimonial-02.jpg" alt="image" class="testimonials__img">
+
+                     <h2 class="testimonials__name">SangePhet</h2>
+
+                     <div class="testimonials__rating">
+                        <div class="testimonials__stars">
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                        </div>
+
+                        <h3 class="testimonials__number">5.0</h3>
+                     </div>
+
+                     <p data-i18n="test_desc_2">
+                        Fast turnaround. Really helped me out with a urgent request. Thanks!
+                     </p>
+                  </div>
+               </article>
+
+               <article class="testimonials__card">
+                  <div class="blob"></div>
+
+                  <div class="testimonials__data">
+                     <img src="assets/img/testimonial-03.jpg" alt="image" class="testimonials__img">
+
+                     <h2 class="testimonials__name">Kitar</h2>
+
+                     <div class="testimonials__rating">
+                        <div class="testimonials__stars">
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                        </div>
+
+                        <h3 class="testimonials__number">5.0</h3>
+                     </div>
+
+                     <p data-i18n="test_desc_3">
+                        Good work and delivered right on time. Very easy to communicate with.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="testimonials__card">
+                  <div class="blob"></div>
+
+                  <div class="testimonials__data">
+                     <img src="assets/img/testimonial-04.jpg" alt="image" class="testimonials__img">
+
+                     <h2 class="testimonials__name">PouNa</h2>
+
+                     <div class="testimonials__rating">
+                        <div class="testimonials__stars">
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                           <i class="ri-star-line"></i>
+                        </div>
+
+                        <h3 class="testimonials__number">5.0</h3>
+                     </div>
+
+                     <p data-i18n="test_desc_4">
+                        Understood the brief perfectly. Hardly needed any revisions. Great result.
+                     </p>
+                  </div>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <div class="contact__container container grid">
+            <div class="contact__data">
+               <h2 class="section__title" data-i18n="contact_title">Contact Me</h2>
+
+               <p class="contact__description" data-i18n="contact_desc">Tell me about your next project.</p>
+
+               <button class="contact__button button" id="contact-btn">
+                  <span data-i18n="contact_btn">Copy email</span> <i class="ri-file-copy-line"></i>
+                  <!-- Enter your email -->
+                  <span class="contact__email" id="contact-email">gphounsavathg@gmail.com</span>
+               </button>
+            </div>
+
+            <div class="contact__content grid">
+               <div class="contact__info grid">
+                  <div>
+                     <h3 class="contact__title">Email</h3>
+                     <address class="contact__address">gphounsavathg@gmail.com</address>
+                  </div>
+
+                  <div>
+                     <h3 class="contact__title" data-i18n="contact_loc">Location</h3>
+                     <address class="contact__address">Lao, Vieantian</address>
+                  </div>
+               </div>
+
+               <div class="contact__social">
+                  <h3 class="contact__title" data-i18n="contact_social">Social Media</h3>
+
+                  <div class="contact__links">
+                     <a href="https://www.youtube.com/@arliya-phounsavath?si=5lO7lvzEfLmUd7hW" target="_blank"
+                        class="contact__link">
+                        Youtube
+                        <i class="ri-arrow-right-up-long-line"></i>
+                     </a>
+
+                     <a href="https://www.facebook.com/" target="_blank" class="contact__link">
+                        Facebook
+                        <i class="ri-arrow-right-up-long-line"></i>
+                     </a>
+
+                     <a href="https://www.tiktok.com/" target="_blank" class="contact__link">
+                        Tiktok
+                        <i class="ri-arrow-right-up-long-line"></i>
+                     </a>
+
+                     <a href="https://www.Instagram.com/" target="_blank" class="contact__link">
+                        Instagram
+                        <i class="ri-arrow-right-up-long-line"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="contact__write">
+                  <h3 class="contact__title" data-i18n="contact_write">Write Me & We'll Talk</h3>
+
+                  <div class="contact__links">
+                     <a href="https://wa.me/+8562051978790" target="_black" class="contact__link">
+                        WhatsApp
+                        <i class="ri-arrow-right-up-long-line"></i>
+                     </a>
+
+                     <a href="https://www.facebook.com/Arliya.io" target="_black" class="contact__link">
+                        Messenger
+                        <i class="ri-arrow-right-up-long-line"></i>
+                     </a>
+
+                     <a href="http://t.me/Ayaya390" target="_black" class="contact__link">
+                        Telegram
+                        <i class="ri-arrow-right-up-long-line"></i>
+                     </a>
+
+                     <a href="https://line.me/ti/p/Q9EBGY7TNe" target="_black" class="contact__link">
+                        Line
+                        <i class="ri-arrow-right-up-long-line"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer grid">
+      <div class="blob-animate"></div>
+
+      <div class="footer__copy">
+         All Rights Reserved By <span>Arliya Phounsavath</span>
+      </div>
+
+      <div class="footer__year">
+         &#169; <span id="footer-year"></span>
+      </div>
+   </footer>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assets/js/scrollreveal.min.js"></script>
+
+   <!--=============== ANIME JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="assets/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+
+   <!--=============== LANG JS ===============-->
+   <script src="assets/js/lang.js"></script>
+</body>
+
+</html>
